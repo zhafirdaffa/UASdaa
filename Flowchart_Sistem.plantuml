@@ -1,0 +1,28 @@
+@startuml
+start
+:Login Admin;
+:Verify Credentials;
+:Access Dashboard;
+if (Admin authenticated?) then (yes)
+  :Show Dashboard;
+else (no)
+  :Display Error;
+  stop
+endif
+
+:Create Customer;
+:Enter Health & Fitness Data;
+:Save to Database;
+:Select Customer;
+:Edit Customer Data;
+:Save Changes;
+
+:Select Customer;
+:Confirm Deletion;
+:Delete Data;
+
+:View Customer Data;
+:Select Menu;
+:Display Customer List;
+stop
+@enduml
